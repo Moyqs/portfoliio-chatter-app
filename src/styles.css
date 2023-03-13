@@ -1,0 +1,272 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../src/images/mountain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
+
+  ul {
+    list-style-type: none;
+    margin-block-end: 0;
+  }
+
+  .container {
+    width: 60%;
+  }
+
+
+/* Styling name form */
+
+#flex1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 900;
+    color: white;
+}
+
+#nameForm {
+    height: 30%;
+    background-color: rgba(221, 221, 221, 0.2);
+    box-shadow: 1px 1px 5px rgb(62, 62, 62);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#form {
+    height: 30%;
+    margin-top: 5%;
+    width: 80%;
+    text-align: center;
+    display: flex;
+}
+
+#userName {
+    width: 80%;
+}
+
+#userName, #name-btn {
+    height: 50%;
+}
+
+#name-btn {
+    width: 20%;
+    margin-left: 1rem;
+}
+
+@media (max-width: 700px) {
+    #form {
+        display: block;
+    }
+
+    #userName {
+        width: 100%;
+    }
+
+    #name-btn {
+        width: 60%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nameForm {
+        width: 90%;
+    }
+}
+
+/* Chat window */
+.chat-window {
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0;
+    display: none;
+}
+
+
+
+/* message window */
+.messages-window {
+    height: 90%;
+    background-color: rgba(255, 255, 255, 1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0.7rem;
+    box-shadow: 1px 3px 3px rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.messages-window:hover {
+    overflow-y: scroll;
+}
+
+.messages-window::-webkit-scrollbar {
+    width: 1em;
+    background-color: transparent;
+    
+}
+   
+.messages-window::-webkit-scrollbar-thumb {
+    background-color: rgb(190, 190, 190);
+    border-radius: 30px;
+    margin: 5px 0;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    
+}
+  
+  
+.messages-window::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.msg {
+    margin: 0.3rem 0;
+}
+
+#messages {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.my {
+    text-align: right;
+    margin-left: auto;
+}
+
+#my-msg {
+    background-color: rgb(181, 223, 255);
+    color: rgb(0, 0, 0);
+    padding: 0.1rem 0.6rem;
+    border-radius: 0.7rem;
+    text-align: left;
+    width: auto;
+    display: inline-block
+}
+
+.my-name {
+    margin-right: 0.45rem;
+}
+
+p#individual-msg {
+    background-color: rgb(221, 221, 221);
+    padding: 0.1rem 0.6rem;
+    border-radius: 0.7rem;
+    display: inline-block
+}
+
+.name {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+p {
+    /* display: inline-block; */
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.other-name {
+    margin-left: 0.6rem;
+    
+}
+
+
+
+/* input window */
+.input-window {
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 0.7rem;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.sendIcon {
+    width: 10%;
+    height: 80%;
+}
+
+.input-bar {
+    height: 80%;
+    width: 90%;
+    
+}
+
+.btn-window {
+    width: 10%;
+    height: 80%;
+    margin-left: 0.7rem;
+}
+
+.btn {
+    background-color: rgb(0, 145, 255);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 0px) {
+    html, body {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+  }
+
+  @media (max-width: 700px) {
+    #form {
+        display: block;
+    }
+
+    #userName {
+        width: 100%;
+    }
+
+    #name-btn {
+        width: 60%;
+        margin-top: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nameForm {
+        width: 90%;
+    }
+
+    .chat-window {
+        width: 90%;
+        height: 80%;
+    }
+}
